@@ -29,7 +29,7 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-[#A3FFD6]">
-      <Header />
+      
       <main className="p-8">
         <h1 className="text-3xl font-bold mb-8 text-[#1C1678]">Your Profile</h1>
         {isEditing ? (

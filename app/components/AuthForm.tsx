@@ -59,10 +59,10 @@ export default function AuthForm({ onSubmit, isSignUp }: AuthFormProps) {
         />
       )}
       <div className="text-superBlue text-xl">Forgot Password?</div>
-      <button type="submit" className="w-full p-2 bg-[#7BC9FF] text-[#1C1678] rounded-xl hover:bg-[#F4FF7B]">
+      <button type="submit" className="w-full p-2 bg-[#7BC9FF] text-[#1C1678] rounded-xl hover:bg-[#F4FF7B] text-xl">
         {isSignUp ? 'Sign Up' : 'Sign In'}
       </button>
-      <div className="text-superBlue text-xl">New user? SignUp</div>
+      <button type="submit" className="w-full p-2  text-[#1C1678] rounded-xl hover:bg-[#ffffff] text-superBlue text-xl text-center">New user? SignUp</button>
     </form>
   )
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Header from '../../components/Header'
 import TicketForm from '../../components/TicketForm'
+import Navbar from '@/app/components/Navbar'
 import BusList, { Bus, demoBuses } from '../../components/BusList'
 
 export default function Ticketing() {
@@ -28,9 +29,10 @@ export default function Ticketing() {
   }
 
   return (
-    <div className="min-h-screen bg-[#A3FFD6]">
-      <Header />
+    
+    <div className="min-h-screen bg-[#A3FFD6]"> 
       <main className="p-8">
+        <div><Navbar/></div>
         <h1 className="text-3xl font-bold mb-8 text-[#1C1678]">Book Your Bus Ticket</h1>
         <TicketForm onSubmit={handleSearch} />
         <BusList buses={buses} searched={searched} />

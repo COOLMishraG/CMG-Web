@@ -21,7 +21,7 @@ export default function SignIn() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24 text-right primarygradient">
+    <div className="flex min-h-screen flex-col items-center justify-center p-24 text-left primarygradient">
       <h1 className={`text-5xl font-bold whitespace-pre-wrap mb-8 text-superBlue ${bungee.className}`}>{`Hello there,\nWelcome back!`}</h1>
       <AuthForm onSubmit={handleSignIn} isSignUp={false} />
       {error && <p className="text-red-500 mt-4">{error}</p>}
